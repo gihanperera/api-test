@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "6c1bcfd4-cec6-48f3-a0be-58c007943060",
+		"name": "assign-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8083/api/employee/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnaWhhbiIsImV4cCI6MTY2MTc4MDI1NywiaWF0IjoxNjYxNzc5OTU3fQ.6LJOG94JambvZ3AdIIIXrPuVx00MCeUx4EKPVdtEaPs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empNo\":\"AL004\",\r\n    \"firstName\":\"Gihan\",\r\n    \"lastName\":\"Perera\",\r\n    \"dateOfBirth\":\"1988-01-12\",\r\n    \"designation\":\"Software Engineer\",\r\n    \"joinedDate\":\"2022-01-05\",\r\n    \"salary\":50000,\r\n    \"status\":\"ACTIVE\",\r\n    \"deleted\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/api/employee/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"employee",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8083/users/verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"gihan\",\r\n    \"passWord\":\"gihan@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/users/verify",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"users",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8083/api/employee/getall",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "33Usbgo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/api/employee/getall",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"employee",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8083/api/employee/findemployee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnaWhhbiIsImV4cCI6MTY2MTc4MDI1NywiaWF0IjoxNjYxNzc5OTU3fQ.6LJOG94JambvZ3AdIIIXrPuVx00MCeUx4EKPVdtEaPs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/api/employee/findemployee",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"employee",
+						"findemployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8083/api/employee/delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnaWhhbiIsImV4cCI6MTY2MTc4MDI1NywiaWF0IjoxNjYxNzc5OTU3fQ.6LJOG94JambvZ3AdIIIXrPuVx00MCeUx4EKPVdtEaPs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/api/employee/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"employee",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
